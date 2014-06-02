@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "es">
+<meta charset = "utf-8"/>
+<head>
+	<title>Formulario HTML</title>
+</head>
+<body>
+
+
+<form method = "GET" action = "procesar.php">
+	Primer Número:
+	<input type = "text" name = "numeroA" autofocus><br>
+	Segundo Número:
+	<input type = "text" name = "numeroB"><br>
+
+	Operacion:
+	<select name = "operacion">
+		<option value = "sumar">+</option>
+		<option value = "restar">-</option>
+		<option value = "multiplicar">*</option>
+		<option value = "dividir">/</option>
+		<option value = "modulo">%</option>
+	</select><br>
+
+	Sexo:
+	<input type = "submit" value = "Enviar...">
+</form>
+<?php
+	include 'footer.html';
+?>
+</body>
+</html>	
